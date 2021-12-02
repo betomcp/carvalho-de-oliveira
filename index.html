@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>titulo</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            background-image: url("images/background.jpg");
+            background-size: cover;
+        }
+
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 15vh;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            /* background-color: rgb(255, 255, 255); */
+        }
+
+        img{
+            width: 25%;
+        }
+
+        ul{
+            color: black;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            list-style: none;
+            /* border: solid 2px red; */
+        }
+
+        /* aside{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 15%;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+        } */
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo-advocacia-criminalista.png" alt="logo">
+            <ul>
+                <li>Home</li>
+                <li>Atuação</li>
+                <li>Blog</li>
+                <li>Escritório</li>
+                <li>Socios</li>
+                <li>Contato</li>
+            </ul>
+        </header>
+        <aside>
+
+        </aside>
+    </div>
+</body>
+</html>
