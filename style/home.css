@@ -1,0 +1,28 @@
+.section_home{
+    display: flex;
+    justify-content: space-between;
+}
+
+.squares{
+    border: solid 2px red;
+    width: 40%;
+}
+
+#square-1, #square-2{
+    width: 7rem;
+    height: 7rem;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+#square-1{
+    background-color: rgb(112, 0, 0);
+    top: 20rem;
+    left: 10rem;
+}
+
+#square-2{
+    background-color: rgb(73, 0, 0);
+    top: 11rem;
+    left: 10rem;
+}
