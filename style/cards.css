@@ -1,3 +1,16 @@
 .section_cards{
     background-color: black;
 }
+
+.cards_div{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card{
+    background-color: white;
+    height: 63vh;
+    width: 24%;
+    box-shadow: -23px -23px 1px rgb(87, 0, 0);
+}
