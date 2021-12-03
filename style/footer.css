@@ -5,7 +5,7 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    /* padding-bottom: 5rem; */
 }
 
 .cards_blurr_div{
@@ -51,3 +51,30 @@ footer{
 .card_blur p, .card_blur h3{
     padding: 2rem 0;
 } 
+
+.footer_bottom{
+    padding-top: 5rem;
+    width: 100%;
+    height: 30vh;
+    background-image: url(../images/Faixa1.png);
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.blurr_div{
+    width: 80%;
+    height: 75%;
+    border-radius: 10px;
+
+    /* -webkit-backdrop-filter: blur(10px); */
+    backdrop-filter: blur(2px);
+
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4rem;
+}
