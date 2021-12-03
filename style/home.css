@@ -1,16 +1,17 @@
 .section_home{
     display: flex;
     justify-content: space-between;
+
+    background-image: url(../images/background-1.jpg);
 }
 
 .squares{
-    border: solid 2px red;
     width: 40%;
 }
 
 #square-1, #square-2{
-    width: 7rem;
-    height: 7rem;
+    width: 12rem;
+    height: 12rem;
     position: relative;
     transform: rotate(45deg);
 }
@@ -19,6 +20,7 @@
     background-color: rgb(112, 0, 0);
     top: 20rem;
     left: 10rem;
+    /* top: 23rem; */
 }
 
 #square-2{

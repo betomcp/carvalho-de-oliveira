@@ -1,4 +1,53 @@
 footer{
-    height: 70vh;
+    /* height: 70vh; */
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
+
+.cards_blurr_div{
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+/* .card_blur{
+    text-align: center;
+    width: 30%;
+    color: white;
+    position: relative;
+    border: solid 2px red;
+}
+
+.card_blur img{
+    width: 90%;
+}
+
+.card_blur p, .card_blur h3{
+    position: relative;
+    top: -24rem;
+    padding: 1.4rem 0;
+} */
+
+.card_blur{
+    width: 40%;
+    height: 100%;
+    background-image: url(../images/GlassBlur.png);
+    background-size: 78%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card_blur p, .card_blur h3{
+    padding: 2rem 0;
+} 
