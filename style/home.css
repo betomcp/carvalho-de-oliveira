@@ -5,26 +5,46 @@
     background-image: url(../images/background-1.jpg);
 }
 
+
+
+/* SQUARES */
+
 .squares{
-    width: 40%;
+    width: 43%;
 }
 
-#square-1, #square-2{
-    width: 12rem;
-    height: 12rem;
+.square-1, .square-2{
+    width: 17rem;
+    height: 17rem;
     position: relative;
     transform: rotate(45deg);
 }
 
-#square-1{
+.square-1{
     background-color: rgb(112, 0, 0);
-    top: 20rem;
     left: 10rem;
-    /* top: 23rem; */
+    top: 20rem;
 }
 
-#square-2{
+.square-2{
     background-color: rgb(73, 0, 0);
-    top: 11rem;
+    top: -2rem;
     left: 10rem;
+
+    transition: .7s;
 }
+
+.downSquare{
+    top: 3rem;
+}
+
+
+/* ANIMAÇÃO */
+
+/* [data-anime1]{
+    transition: .7s;
+} */
+
+/* [data-anime1].downSquare{
+    top: 16rem;
+} */

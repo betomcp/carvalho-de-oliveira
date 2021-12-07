@@ -1,16 +1,42 @@
-document.getElementById('square-1').style.top = '20rem'
+const square = document.querySelector('.square-2')
 
-let controll =  0
+const cards = document.querySelectorAll('.card')
 
-document.addEventListener('scroll', ()=>{
-    let getTopText = document.getElementById('square-1').style.top.substring(0, 2)
+const footerCards = document.querySelectorAll('.card_blur')
 
-    let topN = parseFloat(getTopText)
+
+document.addEventListener('scroll', () =>{
+    const windowTop = window.pageYOffset 
+
+    if(windowTop > 190){
+        square.classList.add('downSquare')
+    }else{
+        square.classList.remove('downSquare')
+    }
+
+    cards.forEach((e) =>{
+        if((windowTop - 50)  + (window.innerHeight*3) / 4 > e.offsetTop){
+            e.classList.remove('hidenCard')
+        }else{
+            e.classList.add('hidenCard')
+        }
+    })
+
+    // footerCards.forEach((e) =>{
+    //     if((windowTop - 50)  + (window.innerHeight*3) / 4 > e.offsetTop){
+    //         e.classList.remove('card_blur_animation')
+    //     }else{
+    //         e.classList.add('card_blur_animation')
+    //     }
+    // })
+
+    if((windowTop)  + (window.innerHeight*3) / 4 > footerCards[0].offsetTop){
+            footerCards[0].classList.remove('card_blur_animation_1')
+            footerCards[1].classList.remove('card_blur_animation_2')
+        }else{
+            footerCards[0].classList.add('card_blur_animation_1')
+            footerCards[1].classList.add('card_blur_animation_2')
+        }
 
     
-    if(topN <= 23){
-        console.log(topN)
-        topN = topN + 0.5   
-        document.getElementById('square-1').style.top = `${topN}rem`
-    }
 })

@@ -13,4 +13,11 @@
     height: 63vh;
     width: 24%;
     box-shadow: -23px -23px 1px rgb(87, 0, 0);
+
+    transition: 1.1 s;
+}
+
+.hidenCard{
+    opacity: 0;
+    transform: translate3d(-200px, 0, 0);
 }

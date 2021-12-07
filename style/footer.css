@@ -46,6 +46,8 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    transition: 2.5s;
 }
 
 .card_blur p, .card_blur h3{
@@ -62,6 +64,7 @@ footer{
     display: flex;
     justify-content: center;
     /* align-items: center; */
+
 }
 
 .blurr_div{
@@ -77,4 +80,13 @@ footer{
     justify-content: space-around;
     align-items: center;
     font-size: 1.4rem;
+}
+
+.card_blur_animation_1{
+    opacity: 0;
+    transform: rotate(0deg) translate3d(0px, 500px, -2px);
+}
+.card_blur_animation_2{
+    opacity: 0;
+    transform: rotate(0deg) translate3d(0px, 500px, -2px);
 }
