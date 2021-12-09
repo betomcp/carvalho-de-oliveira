@@ -22,13 +22,6 @@ document.addEventListener('scroll', () =>{
         }
     })
 
-    // footerCards.forEach((e) =>{
-    //     if((windowTop - 50)  + (window.innerHeight*3) / 4 > e.offsetTop){
-    //         e.classList.remove('card_blur_animation')
-    //     }else{
-    //         e.classList.add('card_blur_animation')
-    //     }
-    // })
 
     if((windowTop)  + (window.innerHeight*3) / 4 > footerCards[0].offsetTop){
             footerCards[0].classList.remove('card_blur_animation_1')
@@ -36,6 +29,14 @@ document.addEventListener('scroll', () =>{
         }else{
             footerCards[0].classList.add('card_blur_animation_1')
             footerCards[1].classList.add('card_blur_animation_2')
+        }
+    
+        if(windowTop > 600){
+            square.classList.add('menuSquare')
+            square.classList.remove('square-1')
+        }else{
+            square.classList.remove('menuSquare')
+            square.classList.add('square-1')
         }
 
     
